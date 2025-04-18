@@ -21,6 +21,11 @@ path = "examples/hostfuncs/main.rs"
 test = true
 
 [[example]]
+name = "opencv_example"
+path = "examples/opencv_example/main.rs"
+test = true
+
+[[example]]
 name = "rust_wasm_examples"
 path = "examples/rust_wasm_examples/main.rs"
 test = true
@@ -38,6 +43,7 @@ strum = "0.27"
 tracing = "0.1.27"
 log = "0.4.27"
 cfg-if = { version = "1" }
+image = "0.25.4"
 
 [target.'cfg(windows)'.dependencies]
 windows = { version = "0.61", features = [
